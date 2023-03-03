@@ -133,9 +133,9 @@ export function Menu() {
               )}
             </Flex>
           ))}
-          <a href="https://pancakeswap.finance/swap" target="_blank" rel="noreferrer noopener">
+          {/* <a href="https://pancakeswap.finance/swap" target="_blank" rel="noreferrer noopener">
             <StyledMenuItem>Swap</StyledMenuItem>
-          </a>
+          </a> */}
         </Flex>
       </Flex>
       <Flex alignItems="center">

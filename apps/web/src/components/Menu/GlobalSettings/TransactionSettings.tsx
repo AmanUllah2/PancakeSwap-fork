@@ -79,7 +79,7 @@ const SlippageTabs = () => {
 
   return (
     <Flex flexDirection="column">
-      <Flex flexDirection="column" mb="24px">
+      {/* <Flex flexDirection="column" mb="24px">
         <Flex mb="12px">
           <Text>{t('Slippage Tolerance')}</Text>
           <QuestionHelper
@@ -191,7 +191,7 @@ const SlippageTabs = () => {
             />
           </Box>
         </Flex>
-      </Flex>
+      </Flex> */}
     </Flex>
   )
 }

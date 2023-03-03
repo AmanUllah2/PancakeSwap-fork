@@ -127,7 +127,7 @@ const NetworkSelect: React.FC<{ chainId: ChainId; switchNetwork: (chainId: numbe
   return (
     <>
       <Box px="16px" py="8px">
-        <Text color="textSubtle">{t('Select a Network')}</Text>
+        <Text color="textSubtle">{t('Select a Network 103')}</Text>
       </Box>
       <UserMenuDivider />
       {targetChains.map((chain) => (

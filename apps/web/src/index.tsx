@@ -9,11 +9,11 @@ import { chains } from './utils/wagmi'
 export function Updaters() {
   return (
     <>
-      <ListsUpdater />
+      {/* <ListsUpdater />
       {chains.map((chain) => (
         <TransactionUpdater key={`trxUpdater#${chain.id}`} chainId={chain.id} />
       ))}
-      <MulticallUpdater />
+      <MulticallUpdater /> */}
     </>
   )
 }

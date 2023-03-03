@@ -437,7 +437,7 @@ const SwapPage = () => {
               </Flex>
             </Flex>
           }
-          subtitle={<CurrencyInputHeaderSubTitle>{t('Trade tokens in an instant')}</CurrencyInputHeaderSubTitle>}
+          subtitle={<CurrencyInputHeaderSubTitle>{t('Trade tokens in an instant 0')}</CurrencyInputHeaderSubTitle>}
         />
         <AutoColumn gap="sm" p="16px">
           <CurrencyInputPanel

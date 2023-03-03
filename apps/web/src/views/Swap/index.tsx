@@ -97,7 +97,7 @@ export default function Swap() {
           />
         )}
         {isDesktop && isSwapHotTokenDisplay && <HotTokenList handleOutputSelect={handleOutputSelect} />}
-        <ModalV2 isOpen={!isDesktop && isSwapHotTokenDisplay} onDismiss={() => setIsSwapHotTokenDisplay(false)}>
+        {/* <ModalV2 isOpen={!isDesktop && isSwapHotTokenDisplay} onDismiss={() => setIsSwapHotTokenDisplay(false)}>
           <Modal
             style={{ padding: 0 }}
             title={t('Top Token')}
@@ -122,7 +122,7 @@ export default function Swap() {
               </AppBody>
             </StyledInputCurrencyWrapper>
           </StyledSwapContainer>
-        </Flex>
+        </Flex> */}
       </Flex>
     </Page>
   )

@@ -229,7 +229,7 @@ export default function StableSwapForm() {
             />
           </Flex>
         }
-        subtitle={t('Trade tokens in an instant')}
+        subtitle={t('Trade tokens in an instant 2')}
         hasAmount={hasAmount}
         onRefreshPrice={onRefreshPrice}
       />

@@ -32,8 +32,8 @@ const Page: React.FC<
         noMinHeight={noMinHeight}
         hideFooterOnDesktop={hideFooterOnDesktop}
         helpUrl={helpUrl}
-        externalText={externalText}
-        externalLinkUrl={externalLinkUrl}
+        externalText={""}
+        externalLinkUrl={""}
         {...props}
       >
         {children}

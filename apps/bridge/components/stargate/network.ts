@@ -2,11 +2,11 @@ import { mainnet, arbitrum, optimism, polygon, fantom, avalanche, bsc } from 'wa
 
 // Chain Id is defined by Stargate
 const stargateNetowrk = [
-  {
-    chainId: 101,
-    name: 'Ethereum',
-    chain: mainnet,
-  },
+  // {
+  //   chainId: 101,
+  //   name: 'Ethereum',
+  //   chain: mainnet,
+  // },
   {
     name: 'BNB Chain',
     chainId: 102,

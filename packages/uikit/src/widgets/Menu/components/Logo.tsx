@@ -46,8 +46,10 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" />
+      {/* <LogoIcon className="mobile-icon" />
+      <LogoWithTextIcon className="desktop-icon" /> */}
+      <img src="https://i.ibb.co/xFQxJc6/Frame-9734.png" alt="Frame-9734"></img>
+      {/* <img src={"https://img.freepik.com/free-vector/branding-identity-corporate-vector-logo-design_460848-8717.jpg"} alt="" /> */}
     </>
   );
 
