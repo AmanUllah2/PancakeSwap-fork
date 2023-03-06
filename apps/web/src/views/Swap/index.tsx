@@ -62,7 +62,7 @@ export default function Swap() {
   )
 
   return (
-    <Page removePadding={true} hideFooterOnDesktop={isChartExpanded}>
+    <Page removePadding={isChartExpanded} hideFooterOnDesktop={isChartExpanded}>
       <Flex width={['328px', '100%']} height="100%" background='#070707' backgroundImage={'url("https://i.ibb.co/vLkjGQJ/image.png")'} backgroundRepeat="no-repeat" backgroundSize="100% 100%" justifyContent="center" padding="32px" position="relative" alignItems="flex-start">
         {isDesktop && isChartSupported && (
           <PriceChartContainer

@@ -1,8 +1,8 @@
 import { DefaultSeoProps } from 'next-seo'
 
 export const SEO: DefaultSeoProps = {
-  titleTemplate: 'KingKongDoge 4',
-  defaultTitle: 'KingKongDoge 4',
+  titleTemplate: 'KingKongDoge',
+  defaultTitle: 'KingKongDoge',
   description:
     'Cheaper and faster than Uniswap? Discover KingKongDoge, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE.',
   twitter: {
