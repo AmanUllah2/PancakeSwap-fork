@@ -81,7 +81,7 @@ const TabContainer = ({ children, docLink, docText }: PropsWithChildren<{ docLin
       <AtomBox position="absolute" style={{ top: '-50px' }}>
         <TabMenu activeIndex={index} onItemClick={setIndex} gap="0px" isColorInverse>
           <Tab>{t('Connect Wallet')}</Tab>
-          <Tab>{t('What’s a Web3 Wallet?')}</Tab>
+          {/* <Tab>{t('What’s a Web3 Wallet?')}</Tab> */}
         </TabMenu>
       </AtomBox>
       <AtomBox
@@ -342,7 +342,7 @@ function DesktopModal<T>({
           }}
         />
       </AtomBox>
-      <AtomBox
+      {/* <AtomBox
         flex={1}
         mx="24px"
         display={{
@@ -370,7 +370,7 @@ function DesktopModal<T>({
           )}
           {selected && selected.installed === false && <NotInstalled qrCode={qrCode} wallet={selected} />}
         </AtomBox>
-      </AtomBox>
+      </AtomBox> */}
     </>
   )
 }

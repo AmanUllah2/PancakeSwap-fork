@@ -333,7 +333,7 @@ const LimitOrders = () => {
 
   return (
     <Page
-      removePadding={isChartExpanded}
+      removePadding={true}
       hideFooterOnDesktop={isSideFooter}
       noMinHeight
       helpUrl={LIMIT_ORDERS_DOCS_URL}
@@ -342,10 +342,14 @@ const LimitOrders = () => {
       <Flex
         width="100%"
         height="100%"
+        paddingTop="32px"
+        background='#070707'
+        backgroundImage={'url("https://i.ibb.co/vLkjGQJ/image.png")'} 
+        backgroundRepeat="no-repeat" 
+        backgroundSize="100% 100%"
         justifyContent="center"
         position="relative"
         mb={isSideFooter ? null : '24px'}
-        mt={isChartExpanded ? '24px' : null}
       >
         {isDesktop && (
           <Flex width={isChartExpanded ? '100%' : '50%'} maxWidth="928px" flexDirection="column">

@@ -278,7 +278,7 @@ export const SmartSwapForm: React.FC<{ handleOutputSelect: (newCurrencyOutput: C
       />
       <CurrencyInputHeader
         title={t('Swap')}
-        subtitle={t('Trade tokens in an instant 1')}
+        subtitle={t('Trade tokens in an instant')}
         hasAmount={hasAmount}
         onRefreshPrice={onRefreshPrice}
       />
