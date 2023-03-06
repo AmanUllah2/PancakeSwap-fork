@@ -19,8 +19,8 @@ const StyledContainer = styled(Flex)<{ isDark: boolean }>`
   padding: 12px 16px;
   background: ${({ isDark }) =>
     isDark
-      ? 'radial-gradient(103.12% 50% at 50% 50%, #21193A 0%, #191326 100%)'
-      : 'radial-gradient(50% 79.31% at 50% 50%, #FAF9FA 0%, #F5F3F8 100%)'};
+      ? 'linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%)'
+      : 'linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%)'};
 
   ${({ theme }) => theme.mediaQueries.xxl} {
     padding: 0;

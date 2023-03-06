@@ -13,7 +13,7 @@ const Page = styled.div`
   min-height: calc(100% - 56px);
   align-items: center;
   flex-direction: column;
-  background: ${({ theme }) => theme.colors.gradientBubblegum};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
 
   ${({ theme }) => theme.mediaQueries.sm} {
     display: grid;

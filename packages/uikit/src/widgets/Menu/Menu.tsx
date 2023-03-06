@@ -151,7 +151,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
                 </AtomBox>
               </Flex>
               <Flex alignItems="center" height="100%">
-                <AtomBox mr="12px" display={{ xs: "none", lg: "block" }}>
+                {/* <AtomBox mr="12px" display={{ xs: "none", lg: "block" }}>
                   <CakePrice showSkeleton={false} cakePriceUsd={cakePriceUsd} />
                 </AtomBox>
                 <Box mt="4px">
@@ -163,7 +163,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
                     color="textSubtle"
                     hideLanguage
                   />
-                </Box>
+                </Box> */}
                 {rightSide}
               </Flex>
             </StyledNav>

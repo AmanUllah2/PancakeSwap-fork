@@ -22,15 +22,15 @@ const BigCurve = styled(Box)<{ $status }>`
     switch ($status) {
       case 'coming_soon':
         return `
-          background: ${theme.colors.tertiary};
+          background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
         `
       case 'live':
         return `
-          background: linear-gradient(#8051D6 100%, #492286 100%);
+          background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
         `
       case 'finished':
         return `
-          background: ${theme.colors.input};
+          background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
         `
       default:
         return ''

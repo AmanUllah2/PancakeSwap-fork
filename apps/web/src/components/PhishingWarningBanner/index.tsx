@@ -9,11 +9,11 @@ const Container = styled(Flex)`
   height: 100%;
   padding: 12px;
   align-items: center;
-  background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)),
-    linear-gradient(180deg, #8051d6 0%, #492286 100%);
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%),
+    linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
-    background: linear-gradient(180deg, #8051d6 0%, #492286 100%);
+    background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   }
 `
 
@@ -47,7 +47,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const [, hideBanner] = usePhishingBannerManager()
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting %domain% - check the URL carefully.", { domain })
+    const warningText = t("please make sure you're visiting - check the URL carefully.", { domain })
     return warningText.split(/(https:\/\/pancakeswap.finance)/g)
   }, [t])
   const warningTextComponent = (
@@ -81,7 +81,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
       ) : (
         <>
           <InnerContainer>
-            <img
+            {/* <img
               src="/images/decorations/phishing-warning-bunny.webp"
               alt="phishing-warning"
               width="92px"
@@ -92,7 +92,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
                   e.currentTarget.src = fallbackSrc
                 }
               }}
-            />
+            /> */}
             <SpeechBubble>{warningTextComponent}</SpeechBubble>
           </InnerContainer>
           <IconButton onClick={hideBanner} variant="text">

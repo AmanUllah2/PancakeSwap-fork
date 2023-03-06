@@ -418,7 +418,7 @@ const SwapPage = () => {
 
   return (
     <>
-      <PageMeta title={t('Exchange')} />
+      <PageMeta title={t('KingKong')} />
       <Card style={{ width: '328px' }}>
         <CurrencyInputHeader
           title={

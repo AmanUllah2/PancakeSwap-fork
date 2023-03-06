@@ -45,7 +45,7 @@ const StyledExpand = styled(Box)<{ expanded: boolean }>`
   overflow: hidden;
   margin: 0 -24px;
   padding: 24px;
-  background: ${({ theme }) => theme.colors.dropdown};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
 `
 
 interface ExpandProps {

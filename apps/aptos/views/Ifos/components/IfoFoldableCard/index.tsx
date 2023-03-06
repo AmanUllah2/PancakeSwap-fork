@@ -46,7 +46,7 @@ const StyledCard = styled(Card)<{ $isCurrent?: boolean }>`
   `}
 
   > div {
-    background: ${({ theme, $isCurrent }) => ($isCurrent ? theme.colors.gradientBubblegum : theme.colors.dropdown)};
+    background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   }
 
   ${({ theme }) => theme.mediaQueries.sm} {
@@ -113,7 +113,7 @@ const StyledNoHatBunny = styled.div<{ $isLive: boolean; $isCurrent?: boolean }>`
 
 const StyledCardFooter = styled(CardFooter)`
   padding: 0;
-  background: ${({ theme }) => theme.colors.backgroundAlt};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   text-align: center;
 `
 

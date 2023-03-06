@@ -21,6 +21,13 @@ const ResetCSS = createGlobalStyle`
     font-size: 100%;
     vertical-align: baseline;
   }
+  nav {
+    background: #070707 !important;
+  }
+  div {
+    color: #fff
+  }
+  
   /* HTML5 display-role reset for older browsers */
   /* prettier-ignore */
   article, aside, details, figcaption, figure, 

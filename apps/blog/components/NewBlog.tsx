@@ -19,7 +19,7 @@ const StyledGradientBg = styled('div')`
   left: 0;
   width: 100%;
   height: 65%;
-  background: ${({ theme }) => theme.colors.gradientBubblegum};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   border-bottom-left-radius: 50% 5%;
   border-bottom-right-radius: 50% 5%;
 

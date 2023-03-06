@@ -33,7 +33,7 @@ const StyledCard = styled(Card)`
 const StyledCardFooter = styled(CardFooter)`
   padding: 16px;
   margin: 0 -12px -12px;
-  background: ${({ theme }) => theme.colors.background};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   text-align: center;
 `
 

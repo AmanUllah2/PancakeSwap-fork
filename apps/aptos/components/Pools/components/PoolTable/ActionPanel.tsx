@@ -40,7 +40,7 @@ const StyledActionPanel = styled.div<{ expanded: boolean }>`
           ${collapseAnimation} 300ms linear forwards
         `};
   overflow: hidden;
-  background: ${({ theme }) => theme.colors.dropdown};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;

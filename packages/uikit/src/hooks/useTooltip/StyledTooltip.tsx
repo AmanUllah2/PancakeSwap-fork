@@ -14,7 +14,7 @@ export const Arrow = styled.div`
   &::before {
     content: "";
     transform: rotate(45deg);
-    background: ${({ theme }) => theme.tooltip.background};
+    background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   }
 `;
 
@@ -25,7 +25,7 @@ export const StyledTooltip = styled(Motion.div)`
   border-radius: 16px;
   max-width: 320px;
   z-index: 101;
-  background: ${({ theme }) => theme.tooltip.background};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   color: ${({ theme }) => theme.tooltip.text};
   box-shadow: ${({ theme }) => theme.tooltip.boxShadow};
 

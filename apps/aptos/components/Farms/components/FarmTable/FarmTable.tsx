@@ -19,7 +19,7 @@ export interface ITableProps {
 
 const Container = styled.div`
   width: 100%;
-  background: ${({ theme }) => theme.card.background};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   border-radius: 16px;
   margin: 16px 0px;
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};

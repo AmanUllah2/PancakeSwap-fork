@@ -15,7 +15,7 @@ const DropDownHeader = styled.div`
   box-shadow: ${({ theme }) => theme.shadows.inset};
   border: 1px solid ${({ theme }) => theme.colors.inputSecondary};
   border-radius: 16px;
-  background: ${({ theme }) => theme.colors.input};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   transition: border-radius 0.15s;
 `
 
@@ -23,7 +23,7 @@ const DropDownContainer = styled(Button)`
   cursor: pointer;
   width: 100%;
   position: relative;
-  background: ${({ theme }) => theme.colors.input};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   border-radius: 16px;
   height: 40px;
   min-width: 136px;

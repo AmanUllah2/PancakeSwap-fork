@@ -16,7 +16,7 @@ export const ModalHeader = styled.div<{ background?: string }>`
   padding: 12px 24px;
 
   ${({ theme }) => theme.mediaQueries.md} {
-    background: ${({ background }) => background || "transparent"};
+    background: 'linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%)';
   }
 `;
 
@@ -56,7 +56,7 @@ export const ModalBackButton: React.FC<React.PropsWithChildren<{ onBack: ModalPr
 
 export const ModalContainer = styled(MotionBox)<{ $minWidth: string }>`
   overflow: hidden;
-  background: ${({ theme }) => theme.modal.background};
+  background: 'linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%)';
   box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 32px 32px 0px 0px;

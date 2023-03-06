@@ -62,8 +62,8 @@ export default function Swap() {
   )
 
   return (
-    <Page removePadding={isChartExpanded} hideFooterOnDesktop={isChartExpanded}>
-      <Flex width={['328px', '100%']} height="100%" justifyContent="center" position="relative" alignItems="flex-start">
+    <Page removePadding={true} hideFooterOnDesktop={isChartExpanded}>
+      <Flex width={['328px', '100%']} height="100%" background='#070707' backgroundImage={'url("https://i.ibb.co/vLkjGQJ/image.png")'} backgroundRepeat="no-repeat" backgroundSize="100% 100%" justifyContent="center" padding="32px" position="relative" alignItems="flex-start">
         {isDesktop && isChartSupported && (
           <PriceChartContainer
             inputCurrencyId={inputCurrencyId}
@@ -97,7 +97,7 @@ export default function Swap() {
           />
         )}
         {isDesktop && isSwapHotTokenDisplay && <HotTokenList handleOutputSelect={handleOutputSelect} />}
-        {/* <ModalV2 isOpen={!isDesktop && isSwapHotTokenDisplay} onDismiss={() => setIsSwapHotTokenDisplay(false)}>
+        <ModalV2 isOpen={!isDesktop && isSwapHotTokenDisplay} onDismiss={() => setIsSwapHotTokenDisplay(false)}>
           <Modal
             style={{ padding: 0 }}
             title={t('Top Token')}
@@ -122,7 +122,7 @@ export default function Swap() {
               </AppBody>
             </StyledInputCurrencyWrapper>
           </StyledSwapContainer>
-        </Flex> */}
+        </Flex>
       </Flex>
     </Page>
   )

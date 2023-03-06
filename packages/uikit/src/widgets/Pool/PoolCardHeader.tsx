@@ -4,8 +4,7 @@ import getThemeValue from "../../util/getThemeValue";
 import { CardHeader, Flex, Heading, Text } from "../../components";
 
 const Wrapper = styled(CardHeader)<{ isFinished?: boolean; background: string }>`
-  background: ${({ isFinished, background, theme }) =>
-    isFinished ? theme.colors.backgroundDisabled : getThemeValue(theme, `colors.${background}`)};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   border-radius: ${({ theme }) => `${theme.radii.card} ${theme.radii.card} 0 0`};
 `;
 

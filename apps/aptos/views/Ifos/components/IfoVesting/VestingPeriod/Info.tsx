@@ -12,7 +12,7 @@ import useLedgerTimestamp from 'hooks/useLedgerTimestamp'
 import Claim from './Claim'
 
 const WhiteCard = styled.div`
-  background: ${({ theme }) => theme.colors.backgroundAlt};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   padding: 12px;
   border-radius: 12px;
   margin: 8px 0 20px 0;
@@ -21,7 +21,7 @@ const WhiteCard = styled.div`
 const StyleTag = styled(Tag)<{ isPrivate: boolean }>`
   font-size: 14px;
   color: ${({ theme }) => theme.colors.text};
-  background: ${({ theme, isPrivate }) => (isPrivate ? theme.colors.gradientBlue : theme.colors.gradientViolet)};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
 `
 
 interface InfoProps {

@@ -65,7 +65,7 @@ const Navbar = ({ height = 44 }) => {
           justifyContent: 'center',
           width: '100vw',
           zIndex: '100',
-          background: theme.colors.backgroundAlt,
+          background: 'linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%)',
           paddingTop: `${top}px`,
           boxSizing: 'content-box',
         }}

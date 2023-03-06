@@ -56,7 +56,7 @@ const Container = styled.div<{ expanded }>`
           ${collapseAnimation} 300ms linear forwards
         `};
   overflow: hidden;
-  background: ${({ theme }) => theme.colors.dropdown};
+  background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
   display: flex;
   width: 100%;
   flex-direction: column-reverse;

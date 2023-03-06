@@ -43,7 +43,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
   const [, hideBanner] = usePhishingBanner()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting %domain% - check the URL carefully.", { domain: DOMAIN })
+    const warningText = t("please make sure you're visiting - check the URL carefully.", { domain: DOMAIN })
     return warningText.split(/(https:\/\/aptos.pancakeswap.finance)/g)
   }, [t])
   const warningTextComponent = (
@@ -70,10 +70,10 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
     <Container className="warning-banner">
       <style jsx global>{`
         .warning-banner {
-          background: linear-gradient(180deg, #1eb8cb 0%, #00bfa5 100%);
+          background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
         }
         [data-theme='dark'] .warning-banner {
-          background: linear-gradient(180deg, #12838e 0%, #005a5a 100%);
+          background: linear-gradient(90.58deg, #FF3701 -0.85%, #E8843B 101.4%);
         }
       `}</style>
       <AtomBox display={{ xs: 'flex', lg: 'none' }} alignItems="center" justifyContent="center" width="full">
@@ -84,7 +84,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
       </AtomBox>
       <AtomBox display={{ xs: 'none', lg: 'flex' }} alignItems="center" justifyContent="center" width="full">
         <InnerContainer>
-          <img src="/images/decorations/phishing-warning-bunny.png" alt="phishing-warning" width="78px" />
+          {/* <img src="/images/decorations/phishing-warning-bunny.png" alt="phishing-warning" width="78px" /> */}
           <SpeechBubble>{warningTextComponent}</SpeechBubble>
         </InnerContainer>
         <IconButton onClick={hideBanner} variant="text">
