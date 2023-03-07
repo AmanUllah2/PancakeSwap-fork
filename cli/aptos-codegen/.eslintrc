@@ -1,5 +1,5 @@
-// {
-//   "rules": {
-//     "import/extensions": "off"
-//   }
-// }
+{
+  "rules": {
+    "import/extensions": "off"
+  }
+}
