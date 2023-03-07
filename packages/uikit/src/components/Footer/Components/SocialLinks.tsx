@@ -11,7 +11,7 @@ const SocialLinks: React.FC<React.PropsWithChildren<FlexProps>> = ({ ...props })
 
   return (
     <Flex {...props} data-theme="dark">
-      {socials.map((social, index) => {
+      {/* {socials.map((social, index) => {
         const iconProps = {
           width: "20px",
           color: "textSubtle",
@@ -35,7 +35,7 @@ const SocialLinks: React.FC<React.PropsWithChildren<FlexProps>> = ({ ...props })
             <Icon {...iconProps} />
           </Link>
         );
-      })}
+      })} */}
     </Flex>
   );
 };
