@@ -90,11 +90,11 @@ const config: (
           label: t('Farms'),
           href: '/farms',
         },
-        // {
-        //   label: t('Pools'),
-        //   href: '/pools',
-        //   supportChainIds: SUPPORT_ONLY_BSC,
-        // },
+        {
+          label: t('Pools'),
+          href: '/pools',
+          supportChainIds: SUPPORT_ONLY_BSC,
+        },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     // {
