@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { redirect } from 'next/navigation';
+import { useEffect } from 'react'
 import { PageSection } from '@pancakeswap/uikit'
 import { useAccount } from 'wagmi'
 import useTheme from 'hooks/useTheme'
@@ -17,8 +19,6 @@ import CakeDataRow from './components/CakeDataRow'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
 import MultipleBanner from './components/Banners/MultipleBanner'
-import { redirect } from 'next/navigation';
-import { useEffect } from 'react'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;

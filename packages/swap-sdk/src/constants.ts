@@ -5,8 +5,8 @@ export enum ChainId {
   ETHEREUM = 1,
   GOERLI = 5,
   BSC = 56,
-  BSC_TESTNET = 97,
-  ARBITRUM = 42161,
+  BSC_TESTNET = 97
+  // ARBITRUM = 42161,
 }
 
 export const ZERO_PERCENT = new Percent('0')
@@ -21,7 +21,7 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.GOERLI]: FACTORY_ADDRESS_ETH,
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
-  [ChainId.ARBITRUM]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
+  // [ChainId.ARBITRUM]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
