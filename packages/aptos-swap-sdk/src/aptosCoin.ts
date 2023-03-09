@@ -25,7 +25,7 @@ export class AptosCoin extends NativeCurrency {
 
   public equals(other: Currency): boolean {
     if (other.chainId === this.chainId) {
-      if (other.isNative || other.address === this.address) {
+      if (other?.isNative || other.address === this.address) {
         return true
       }
       return false

@@ -4,15 +4,14 @@ import { ERC20Token } from './entities/token'
 export enum ChainId {
   ETHEREUM = 1,
   GOERLI = 5,
-  BSC = 56,
-  BSC_TESTNET = 97
-  // ARBITRUM = 42161,
+  BSC = 42161,
+  BSC_TESTNET = 97,
 }
 
 export const ZERO_PERCENT = new Percent('0')
 export const ONE_HUNDRED_PERCENT = new Percent('1')
 
-export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
+export const FACTORY_ADDRESS = '0x1092d50E8E14479bB769b687427B72BeE70c9534'
 
 const FACTORY_ADDRESS_ETH = '0x1097053Fd2ea711dad45caCcc45EfF7548fCB362'
 
@@ -21,7 +20,6 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.GOERLI]: FACTORY_ADDRESS_ETH,
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
-  // [ChainId.ARBITRUM]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
@@ -103,7 +101,7 @@ export const NATIVE: Record<
   },
   [ChainId.BSC_TESTNET]: {
     name: 'Binance Chain Native Token',
-    symbol: 'tBNB',
+    symbol: 'BNB',
     decimals: 18,
   },
 }
