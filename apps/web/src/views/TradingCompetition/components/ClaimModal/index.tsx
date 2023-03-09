@@ -53,7 +53,7 @@ const ClaimModal: React.FC<React.PropsWithChildren<CompetitionProps>> = ({
   }
 
   return (
-    <Modal title={t('Collect Winnings')} onDismiss={onDismiss}>
+    <Modal title={t('Collect Winnings')} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <Flex width="100%" flexDirection="column" alignItems="center" justifyContent="center" maxWidth="360px">
         <Text color="secondary" bold>
           {t('Congratulations! You won')}:

@@ -127,7 +127,7 @@ const ShareImageModal: React.FC<React.PropsWithChildren<ShareImageModalProps>> =
   }
 
   return (
-    <Modal title={t('Share Your Score')} onDismiss={onDismiss} minWidth="280px">
+    <Modal title={t('Share Your Score')} onDismiss={onDismiss} minWidth="280px" style={{ background: '#070707' }}>
       <Flex flexDirection="column" alignItems="center" maxWidth="460px">
         {bgImage && profileImage ? (
           <Flex alignItems="center" justifyContent="center" minHeight="258px">

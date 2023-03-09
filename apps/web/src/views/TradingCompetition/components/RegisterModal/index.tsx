@@ -41,7 +41,7 @@ const RegisterModal: React.FC<React.PropsWithChildren<CompetitionProps>> = ({
   }
 
   return (
-    <Modal title={t('Register')} onDismiss={onDismiss}>
+    <Modal title={t('Register')} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <Flex flexDirection="column" alignItems="center" maxWidth="400px">
         <AvatarWrapper>
           {profile ? <ProfileAvatarWithTeam profile={profile} /> : <StyledNoProfileAvatarIcon />}

@@ -110,7 +110,7 @@ const TransactionConfirmationModal: React.FC<
   if (!chainId) return null
 
   return (
-    <Modal title={title} headerBackground="gradientCardHeader" {...props} onDismiss={handleDismiss}>
+    <Modal title={title} headerBackground="gradientCardHeader" {...props} onDismiss={handleDismiss} style={{ background: '#070707' }}>
       {attemptingTxn ? (
         <ConfirmationPendingContent pendingText={pendingText} />
       ) : hash ? (

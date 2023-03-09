@@ -230,7 +230,7 @@ export const BCakeMigrateModal: React.FC<BCakeMigrateModalProps> = ({
     }
   }
   return (
-    <Modal title={t('Migrate your stakings')} width="420px" onDismiss={onDismiss}>
+    <Modal title={t('Migrate your stakings')} width="420px" onDismiss={onDismiss} style={{ background: '#070707' }}>
       {tooltipVisible && tooltip}
       <InfoBox ref={targetRef}>
         <InfoText>{t('You will need to migrate your stakings before activating yield booster for a farm')}</InfoText>

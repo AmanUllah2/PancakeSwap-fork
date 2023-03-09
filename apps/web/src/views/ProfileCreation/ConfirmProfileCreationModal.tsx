@@ -60,7 +60,7 @@ const ConfirmProfileCreationModal: React.FC<React.PropsWithChildren<Props>> = ({
     })
 
   return (
-    <Modal title={t('Complete Profile')} onDismiss={onDismiss}>
+    <Modal title={t('Complete Profile')} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <Text color="textSubtle" mb="8px">
         {t('Submitting NFT to contract and confirming User Name and Team.')}
       </Text>

@@ -35,7 +35,7 @@ const FarmTransactionModal: React.FC<React.PropsWithChildren<FarmTransactionModa
   }, [pickedData, t])
 
   return (
-    <Modal title={modalTitle} onDismiss={onDismiss}>
+    <Modal title={modalTitle} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <ModalBody width={['100%', '100%', '100%', '352px']}>
         <Flex flexDirection="column">
           <FarmInfo pickedData={pickedData} />

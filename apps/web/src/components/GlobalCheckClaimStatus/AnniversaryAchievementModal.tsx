@@ -55,7 +55,7 @@ const AnniversaryAchievementModal: React.FC<AnniversaryModalProps> = ({ onDismis
   }, [])
 
   return (
-    <Modal title={t('Congratulations!')} onDismiss={onDismiss}>
+    <Modal title={t('Congratulations!')} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <Flex flexDirection="column" alignItems="center" justifyContent="center" maxWidth="450px">
         <Box>
           <AnniversaryImage src="/images/achievements/2-year.svg" />

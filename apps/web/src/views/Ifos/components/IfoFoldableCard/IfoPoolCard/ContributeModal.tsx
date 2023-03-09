@@ -153,7 +153,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
     valueWithTokenDecimals.isGreaterThan(userCurrencyBalance) || valueWithTokenDecimals.isGreaterThan(maximumTokenEntry)
 
   return (
-    <Modal title={t('Contribute %symbol%', { symbol: currency.symbol })} onDismiss={onDismiss}>
+    <Modal title={t('Contribute %symbol%', { symbol: currency.symbol })} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <ModalBody maxWidth="360px">
         <Box p="2px">
           <Flex justifyContent="space-between" mb="16px">

@@ -33,7 +33,7 @@ const EditProfileModal: React.FC<React.PropsWithChildren<EditProfileModalProps>>
   const handleBack = isStartView ? null : () => goPrevious()
 
   return (
-    <Modal title={viewTitle(t, currentView)} onBack={handleBack} onDismiss={onDismiss} hideCloseButton={!isStartView}>
+    <Modal title={viewTitle(t, currentView)} onBack={handleBack} onDismiss={onDismiss} hideCloseButton={!isStartView} style={{ background: '#070707' }}>
       <div style={{ maxWidth: '400px' }}>
         {currentView === Views.START && (
           <StartView goToApprove={goToApprove} goToChange={goToChange} goToRemove={goToRemove} onDismiss={onDismiss} />

@@ -37,7 +37,7 @@ const UnsupportedModal: React.FC<React.PropsWithChildren<Props>> = ({ currencies
   const unsupportedTokens: { [address: string]: Token } = useUnsupportedTokens()
 
   return (
-    <Modal title={t('Unsupported Assets')} onDismiss={onDismiss}>
+    <Modal title={t('Unsupported Assets')} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <AutoColumn gap="lg">
         {tokens.map((token) => {
           return (
