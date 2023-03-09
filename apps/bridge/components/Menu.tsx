@@ -156,7 +156,7 @@ const UserMenuItems = ({ onShowTx }: { onShowTx: () => void }) => {
       </UserMenuItem>
       <UserMenuDivider />
       <Box px="16px" py="8px">
-        <Text>Select a Network</Text>
+        <Text>Select a Network ---</Text>
       </Box>
       <UserMenuDivider />
       {CHAINS_STARGATE.map((chain) => (

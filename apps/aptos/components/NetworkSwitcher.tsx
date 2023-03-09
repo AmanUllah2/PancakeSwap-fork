@@ -20,7 +20,7 @@ const NetworkSelect = () => {
   return (
     <>
       <Box px="16px" py="8px">
-        <Text color="textSubtle">{t('Select a Network')}</Text>
+        <Text color="textSubtle">{t('Select a Network --')}</Text>
       </Box>
       <UserMenuDivider />
       {evmChains.map((chain) => (

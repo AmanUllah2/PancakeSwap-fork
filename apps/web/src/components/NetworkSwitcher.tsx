@@ -37,7 +37,7 @@ const NetworkSelect = ({ switchNetwork, chainId }) => {
   return (
     <>
       <Box px="16px" py="8px">
-        <Text color="textSubtle">{t('Select a Network')}</Text>
+        <Text color="textSubtle">{t('Select a Network ----')}</Text>
       </Box>
       <UserMenuDivider />
       {chains
@@ -176,7 +176,7 @@ export const NetworkSwitcher = () => {
               <Box display={['block', null, null, null, null, 'none']}>{symbol}</Box>
             </>
           ) : (
-            t('Select a Network')
+            t('Select a Network 100')
           )
         }
       >

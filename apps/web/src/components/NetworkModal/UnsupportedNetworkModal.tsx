@@ -37,7 +37,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
   )
 
   return (
-    <Modal title={t('Check your network')} hideCloseButton headerBackground="gradientCardHeader">
+    <Modal title={t('Check your network')} hideCloseButton headerBackground="gradientCardHeader" style={{ background: '#070707' }}>
       <Grid style={{ gap: '16px' }} maxWidth="336px">
         <Text>
           {t('Currently %feature% only supported in', { feature: typeof title === 'string' ? title : 'this page' })}{' '}

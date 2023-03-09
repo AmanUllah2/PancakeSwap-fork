@@ -39,7 +39,7 @@ export function PageNetworkSupportModal() {
   }, [menuItems, pathname])
 
   return (
-    <Modal title={title || t('Check your network')} hideCloseButton headerBackground="gradientCardHeader">
+    <Modal title={title || t('Check your network')} hideCloseButton headerBackground="gradientCardHeader" style={{ background: '#070707' }}>
       <Grid style={{ gap: '16px' }} maxWidth="360px">
         <Text bold>{t('It’s a BNB Smart Chain only feature')}</Text>
 
