@@ -100,7 +100,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
   }, [isConfirmed, isWarning, pool, valueWithTokenDecimals])
 
   return (
-    <Modal title={t('Contribute %symbol%', { symbol: currency.symbol })} onDismiss={onDismiss}>
+    <Modal title={t('Contribute %symbol%', { symbol: currency.symbol })} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <ModalBody maxWidth={['100%', '100%', '100%', '360px']}>
         <Box p="2px">
           {hasLimit && (

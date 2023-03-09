@@ -18,7 +18,7 @@ export const WrongNetworkModal: React.FC = () => {
 
   return (
     <ModalV2 isOpen={isWrongNetwork}>
-      <Modal title={t('Wrong Network')} hideCloseButton>
+      <Modal title={t('Wrong Network')} hideCloseButton style={{ background: '#070707' }}>
         <Text>{t('You’re connected to the wrong network.')}</Text>
         <Text mb="24px">
           {t('Please check your wallet app and make sure ’%network%’ is selected.', { network: 'Aptos Mainnet' })}

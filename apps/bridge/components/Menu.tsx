@@ -250,7 +250,7 @@ function RecentTransactionsModal({
   transactions: TransactionType[]
 }) {
   return (
-    <Modal title="Recent Transactions" onDismiss={onDismiss}>
+    <Modal title="Recent Transactions" onDismiss={onDismiss} style={{ background: '#070707' }}>
       <Box mb="16px" style={{ textAlign: 'right' }}>
         <Button scale="sm" onClick={() => window.stargate.transaction.clear()} variant="text" px="0">
           Clear all

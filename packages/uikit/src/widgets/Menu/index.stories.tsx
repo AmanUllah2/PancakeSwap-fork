@@ -52,7 +52,7 @@ const UserMenuComponent: React.FC<React.PropsWithChildren<{ variant?: Variant; t
 };
 
 const GlobalMenuModal: React.FC<React.PropsWithChildren<ModalProps>> = ({ title, onDismiss, ...props }) => (
-  <Modal title={title} onDismiss={onDismiss} {...props}>
+  <Modal title={title} onDismiss={onDismiss} {...props} style={{ background: '#070707' }}>
     <Heading>{title}</Heading>
     <Button>This button Does nothing</Button>
   </Modal>

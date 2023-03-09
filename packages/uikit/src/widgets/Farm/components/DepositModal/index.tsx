@@ -169,7 +169,7 @@ const DepositModal: React.FC<React.PropsWithChildren<DepositModalProps>> = ({
   }
 
   return (
-    <Modal title={t("Stake LP tokens")} onDismiss={onDismiss}>
+    <Modal title={t("Stake LP tokens")} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <ModalBody width={["100%", "100%", "100%", "420px"]}>
         <ModalInput
           value={val}

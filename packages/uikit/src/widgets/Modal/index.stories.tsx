@@ -12,7 +12,7 @@ export default {
 };
 
 const CustomModal: React.FC<React.PropsWithChildren<ModalProps>> = ({ title, onDismiss, ...props }) => (
-  <Modal title={title} onDismiss={onDismiss} {...props}>
+  <Modal title={title} onDismiss={onDismiss} {...props} style={{ background: '#070707' }}>
     <Heading>{title}</Heading>
     <Button>This button Does nothing</Button>
   </Modal>
@@ -49,7 +49,7 @@ export const WithBackButton: React.FC<React.PropsWithChildren> = () => {
     };
 
     return (
-      <Modal title={title} onDismiss={onDismiss} onBack={handleOnBack} hideCloseButton>
+      <Modal title={title} onDismiss={onDismiss} onBack={handleOnBack} hideCloseButton style={{ background: '#070707' }}>
         <Button onClick={onDismiss} variant="text">
           Consumer can still close it.
         </Button>
@@ -65,7 +65,7 @@ export const WithBackButton: React.FC<React.PropsWithChildren> = () => {
 export const WithCustomHeader: React.FC<React.PropsWithChildren> = () => {
   const CustomHeaderModal: React.FC<React.PropsWithChildren<ModalProps>> = ({ title, onDismiss }) => {
     return (
-      <Modal title={title} headerBackground="primary" onDismiss={onDismiss}>
+      <Modal title={title} headerBackground="primary" onDismiss={onDismiss} style={{ background: '#070707' }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu pretium massa. Donec et gravida eros, eget
         sollicitudin sapien. Donec imperdiet lorem nulla, at hendrerit purus lacinia ut. Phasellus rhoncus justo in
         tincidunt cursus. Fusce vulputate, enim id facilisis faucibus, justo nunc consectetur nibh, sit amet euismod
@@ -110,7 +110,7 @@ export const ReactingToOutsideChanges: React.FC<React.PropsWithChildren> = () =>
     onDismiss,
   }) => {
     return (
-      <Modal title={title} onDismiss={onDismiss}>
+      <Modal title={title} onDismiss={onDismiss} style={{ background: '#070707' }}>
         <h2>Counter: {count}</h2>
         <Button mt="8px" onClick={onDismiss}>
           Close

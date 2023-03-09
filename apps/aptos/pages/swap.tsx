@@ -537,7 +537,7 @@ const SwapPage = () => {
         </AutoColumn>
         {trade && <AdvancedSwapDetailsDropdown trade={trade} />}
         <ModalV2 isOpen={Boolean(warningTokens.length)}>
-          <Modal title={t('Import Token')} hideCloseButton>
+          <Modal title={t('Import Token')} hideCloseButton style={{ background: '#070707' }}>
             <div style={{ maxWidth: '380px' }}>
               <ImportToken tokens={warningTokens} />
             </div>

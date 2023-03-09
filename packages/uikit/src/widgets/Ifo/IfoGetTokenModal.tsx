@@ -19,7 +19,7 @@ const IfoGetTokenModal: React.FC<React.PropsWithChildren<Props>> = ({ symbol, ad
   const { isMobile } = useMatchBreakpoints();
 
   return (
-    <Modal title={t("%symbol% required", { symbol })} onDismiss={onDismiss}>
+    <Modal title={t("%symbol% required", { symbol })} onDismiss={onDismiss} style={{ background: '#070707' }}>
       <ModalBody maxWidth={isMobile ? "100%" : "288px"}>
         <Image src={imageSrc} width={72} height={72} margin="auto" mb="24px" />
         <Text mb="16px">{t("You’ll need %symbol% tokens to participate in the IFO!", { symbol })}</Text>
