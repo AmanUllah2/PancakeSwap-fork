@@ -141,6 +141,7 @@ export default function CurrencySearchModal({
       onDragStart={() => {
         if (wrapperRef.current) wrapperRef.current.style.animation = 'none'
       }}
+      style={{background: '#070707'}}
       // @ts-ignore
       onDragEnd={(e, info) => {
         if (info.velocity.y > MODAL_SWIPE_TO_CLOSE_VELOCITY && onDismiss) onDismiss()
