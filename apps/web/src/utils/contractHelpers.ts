@@ -168,7 +168,6 @@ export const getContract = ({
   signer?: Signer | Provider
 }) => {
   const signerOrProvider = signer ?? provider({ chainId })
-  // console.log("hereee, ",address, chainId )
   return new Contract(address, abi, signerOrProvider)
 }
 

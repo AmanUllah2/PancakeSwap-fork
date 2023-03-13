@@ -4,14 +4,14 @@ import { ERC20Token } from './entities/token'
 export enum ChainId {
   ETHEREUM = 1,
   GOERLI = 5,
-  BSC = 42161,
+  BSC = 56,
   BSC_TESTNET = 97,
 }
 
 export const ZERO_PERCENT = new Percent('0')
 export const ONE_HUNDRED_PERCENT = new Percent('1')
 
-export const FACTORY_ADDRESS = '0x1092d50E8E14479bB769b687427B72BeE70c9534'
+export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 
 const FACTORY_ADDRESS_ETH = '0x1097053Fd2ea711dad45caCcc45EfF7548fCB362'
 
@@ -96,12 +96,12 @@ export const NATIVE: Record<
   [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
   [ChainId.BSC]: {
     name: 'Binance Chain Native Token',
-    symbol: 'BNB',
+    symbol: 'ETH',
     decimals: 18,
   },
   [ChainId.BSC_TESTNET]: {
     name: 'Binance Chain Native Token',
-    symbol: 'BNB',
+    symbol: 'tBNB',
     decimals: 18,
   },
 }
